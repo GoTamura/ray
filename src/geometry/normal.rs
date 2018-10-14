@@ -1,0 +1,128 @@
+use std::ops::*;
+
+pub type Normal3f = Normal3;
+
+#[derive(Debug, PartialEq, Clone)]
+pub struct Normal3 {
+    pub x: f64,
+    pub y: f64,
+    pub z: f64,
+}
+
+impl Add for Normal3 {
+    type Output = Normal3;
+
+    fn add(self, other: Normal3) -> Normal3 {
+        Normal3 {
+            x: self.x + other.x,
+            y: self.y + other.y,
+            z: self.z + other.z,
+        }
+    }
+}
+
+impl AddAssign for Normal3 {
+    fn add_assign(&mut self, other: Normal3) {
+        *self = Normal3 {
+            x: self.x + other.x,
+            y: self.y + other.y,
+            z: self.z + other.z,
+        };
+    }
+}
+
+impl Sub for Normal3 {
+    type Output = Normal3;
+
+    fn sub(self, other: Normal3) -> Normal3 {
+        Normal3 {
+            x: self.x - other.x,
+            y: self.y - other.y,
+            z: self.z - other.z,
+        }
+    }
+}
+
+impl SubAssign for Normal3 {
+    fn sub_assign(&mut self, other: Normal3) {
+        *self = Normal3 {
+            x: self.x - other.x,
+            y: self.y - other.y,
+            z: self.z - other.z,
+        };
+    }
+}
+
+impl Div<f64> for Normal3 {
+    type Output = Normal3;
+
+    fn div(self, rhs: f64) -> Normal3 {
+        Normal3 {
+            x: self.x / rhs,
+            y: self.y / rhs,
+            z: self.z / rhs,
+        }
+    }
+}
+
+impl DivAssign<f64> for Normal3 {
+    fn div_assign(&mut self, rhs: f64) {
+        *self = Normal3 {
+            x: self.x / rhs,
+            y: self.y / rhs,
+            z: self.z / rhs,
+        };
+    }
+}
+
+impl Mul<f64> for Normal3 {
+    type Output = Normal3;
+
+    fn mul(self, rhs: f64) -> Normal3 {
+        Normal3 {
+            x: self.x * rhs,
+            y: self.y * rhs,
+            z: self.z * rhs,
+        }
+    }
+}
+
+impl MulAssign<f64> for Normal3 {
+    fn mul_assign(&mut self, rhs: f64) {
+        *self = Normal3 {
+            x: self.x * rhs,
+            y: self.y * rhs,
+            z: self.z * rhs,
+        }
+    }
+}
+
+impl Normal3 {
+    pub fn length_squared(self) -> f64 {
+        self.x * self.x + self.y * self.y + self.z * self.z
+    }
+
+    pub fn length(self) -> f64 {
+        self.length_squared().sqrt()
+    }
+}
+
+impl Index<u32> for Normal3 {
+    type Output = f64;
+
+    fn index(&self, i: u32) -> &f64 {
+        match i {
+            0 => &self.x,
+            1 => &self.y,
+            _ => &self.z,
+        }
+    }
+}
+
+#[cfg(test)]
+mod test {
+    #[test]
+    fn test_add_assign() {
+        println!("hello");
+    }
+}
