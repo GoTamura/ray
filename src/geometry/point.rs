@@ -1,5 +1,6 @@
 use geometry::vector::Vector3;
 use std::ops::*;
+use std::convert::Into;
 
 pub type Point3f = Point3<f64>;
 
@@ -36,11 +37,7 @@ impl<T: Add<Output=T>> Add<Vector3<T>> for Point3<T> {
 
 impl<T: Add<Output=T> + Copy> AddAssign for Point3<T> {
     fn add_assign(&mut self, other: Point3<T>) {
-        *self = Point3 {
-            x: self.x + other.x,
-            y: self.y + other.y,
-            z: self.z + other.z,
-        };
+        *self = *self + other;
     }
 }
 
@@ -70,15 +67,11 @@ impl<T: Sub<Output=T>> Sub<Vector3<T>> for Point3<T> {
 
 impl<T: Sub<Output=T> + Copy> SubAssign<Vector3<T>> for Point3<T> {
     fn sub_assign(&mut self, other: Vector3<T>) {
-        *self = Point3 {
-            x: self.x - other.x,
-            y: self.y - other.y,
-            z: self.z - other.z,
-        };
+        *self = *self - other;
     }
 }
 
-impl<T: Div<Output=T> + Copy> Div<T> for Point3<T> {
+impl<T: Div<Output=T> + Copy + Into<f64>> Div<T> for Point3<T> {
     type Output = Point3<T>;
 
     fn div(self, rhs: T) -> Point3<T> {
@@ -92,11 +85,7 @@ impl<T: Div<Output=T> + Copy> Div<T> for Point3<T> {
 
 impl<T: Div<Output=T> + Copy> DivAssign<T> for Point3<T> {
     fn div_assign(&mut self, rhs: T) {
-        *self = Point3 {
-            x: self.x / rhs,
-            y: self.y / rhs,
-            z: self.z / rhs,
-        };
+        *self = *self / rhs;
     }
 }
 
@@ -126,11 +115,7 @@ impl Mul<Point3f> for f64 {
 
 impl<T: Mul<Output=T> + Copy> MulAssign<T> for Point3<T> {
     fn mul_assign(&mut self, rhs: T) {
-        *self = Point3 {
-            x: self.x * rhs,
-            y: self.y * rhs,
-            z: self.z * rhs,
-        }
+        *self = *self * rhs;
     }
 }
 
@@ -149,6 +134,16 @@ impl<T> Index<u32> for Point3<T> {
 pub fn lerp(t: f64, p0: &Point3f,  p1: &Point3f) -> Point3f {
     (1. - t) * *p0 + t * *p1
 }
+
+impl<T: Into<f64>> Into<Point3f> for Point3<T> {
+    fn into(self) -> Point3f {
+        Point3f {
+            x: x.into(),
+            y: y.into(),
+            z: z.into(),
+        }
+    }
+} 
 
 #[cfg(test)]
 mod test {

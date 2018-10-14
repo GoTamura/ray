@@ -23,11 +23,7 @@ impl<T: Add<Output=T>> Add for Vector3<T> {
 
 impl<T: Add<Output=T> + Copy> AddAssign for Vector3<T> {
     fn add_assign(&mut self, other: Vector3<T>) {
-        *self = Vector3 {
-            x: self.x + other.x,
-            y: self.y + other.y,
-            z: self.z + other.z,
-        };
+        *self = *self + other;
     }
 }
 
@@ -45,11 +41,7 @@ impl<T: Sub<Output=T>> Sub for Vector3<T> {
 
 impl<T: Sub<Output=T> + Copy> SubAssign for Vector3<T> {
     fn sub_assign(&mut self, other: Vector3<T>) {
-        *self = Vector3 {
-            x: self.x - other.x,
-            y: self.y - other.y,
-            z: self.z - other.z,
-        };
+        *self = *self - other;
     }
 }
 
@@ -67,11 +59,7 @@ impl<T: Div<Output=T> + Copy> Div<T> for Vector3<T> {
 
 impl<T: Div<Output=T> + Copy> DivAssign<T> for Vector3<T> {
     fn div_assign(&mut self, rhs: T) {
-        *self = Vector3 {
-            x: self.x / rhs,
-            y: self.y / rhs,
-            z: self.z / rhs,
-        };
+        *self = *self / rhs;
     }
 }
 
@@ -96,11 +84,7 @@ impl<T: Mul<Output=T> + Add<Output=T> + Sub<Output=T> + Copy> Mul<Vector3<T>> fo
 
 impl<T: Mul<Output=T> + Copy> MulAssign<T> for Vector3<T> {
     fn mul_assign(&mut self, rhs: T) {
-        *self = Vector3 {
-            x: self.x * rhs,
-            y: self.y * rhs,
-            z: self.z * rhs,
-        }
+        *self = *self * rhs;
     }
 }
 
