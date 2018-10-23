@@ -1,4 +1,6 @@
 use std::ops::*;
+use std::convert::From;
+use geometry::vector::*;
 
 pub type Normal3f = Normal3<f64>;
 
@@ -99,6 +101,16 @@ impl<T> Index<u32> for Normal3<T> {
             0 => &self.x,
             1 => &self.y,
             _ => &self.z,
+        }
+    }
+}
+
+impl<T> From<Vector3<T>> for Normal3<T> {
+    fn from(v: Vector3<T>) -> Self {
+        Normal3::<T> {
+            x: v.x,
+            y: v.y,
+            z: v.z,
         }
     }
 }

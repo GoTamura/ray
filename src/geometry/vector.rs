@@ -1,15 +1,17 @@
+use geometry::normal::*;
+use geometry::point::*;
+use std::convert::From;
 use std::ops::*;
 
 pub type Vector3f = Vector3<f64>;
 
 #[derive(Debug, PartialEq, Clone, Copy)]
 pub struct Vector3<T> {
-    pub x: T,
-    pub y: T,
+    pub x: T, pub y: T,
     pub z: T,
 }
 
-impl<T: Add<Output=T>> Add for Vector3<T> {
+impl<T: Add<Output = T>> Add for Vector3<T> {
     type Output = Vector3<T>;
 
     fn add(self, other: Vector3<T>) -> Vector3<T> {
@@ -21,13 +23,13 @@ impl<T: Add<Output=T>> Add for Vector3<T> {
     }
 }
 
-impl<T: Add<Output=T> + Copy> AddAssign for Vector3<T> {
+impl<T: Add<Output = T> + Copy> AddAssign for Vector3<T> {
     fn add_assign(&mut self, other: Vector3<T>) {
         *self = *self + other;
     }
 }
 
-impl<T: Sub<Output=T>> Sub for Vector3<T> {
+impl<T: Sub<Output = T>> Sub for Vector3<T> {
     type Output = Vector3<T>;
 
     fn sub(self, other: Vector3<T>) -> Vector3<T> {
@@ -39,13 +41,13 @@ impl<T: Sub<Output=T>> Sub for Vector3<T> {
     }
 }
 
-impl<T: Sub<Output=T> + Copy> SubAssign for Vector3<T> {
+impl<T: Sub<Output = T> + Copy> SubAssign for Vector3<T> {
     fn sub_assign(&mut self, other: Vector3<T>) {
         *self = *self - other;
     }
 }
 
-impl<T: Div<Output=T> + Copy> Div<T> for Vector3<T> {
+impl<T: Div<Output = T> + Copy> Div<T> for Vector3<T> {
     type Output = Vector3<T>;
 
     fn div(self, rhs: T) -> Vector3<T> {
@@ -57,13 +59,13 @@ impl<T: Div<Output=T> + Copy> Div<T> for Vector3<T> {
     }
 }
 
-impl<T: Div<Output=T> + Copy> DivAssign<T> for Vector3<T> {
+impl<T: Div<Output = T> + Copy> DivAssign<T> for Vector3<T> {
     fn div_assign(&mut self, rhs: T) {
         *self = *self / rhs;
     }
 }
 
-impl<T: Mul<Output=T> + Copy> Mul<T> for Vector3<T> {
+impl<T: Mul<Output = T> + Copy> Mul<T> for Vector3<T> {
     type Output = Vector3<T>;
 
     fn mul(self, rhs: T) -> Vector3<T> {
@@ -75,21 +77,23 @@ impl<T: Mul<Output=T> + Copy> Mul<T> for Vector3<T> {
     }
 }
 
-impl<T: Mul<Output=T> + Add<Output=T> + Sub<Output=T> + Copy> Mul<Vector3<T>> for Vector3<T> {
+impl<T: Mul<Output = T> + Add<Output = T> + Sub<Output = T> + Copy> Mul<Vector3<T>> for Vector3<T> {
     type Output = T;
     fn mul(self, other: Vector3<T>) -> T {
         self.dot(other)
     }
 }
 
-impl<T: Mul<Output=T> + Copy> MulAssign<T> for Vector3<T> {
+impl<T: Mul<Output = T> + Copy> MulAssign<T> for Vector3<T> {
     fn mul_assign(&mut self, rhs: T) {
         *self = *self * rhs;
     }
 }
 
-impl<T> Vector3<T> 
-    where T: Add<Output=T> + Mul<Output=T> + Sub<Output=T> + Copy {
+impl<T> Vector3<T>
+where
+    T: Add<Output = T> + Mul<Output = T> + Sub<Output = T> + Copy,
+{
     pub fn dot(self, other: Vector3<T>) -> T {
         self.x * other.x + self.y * other.y + self.z * other.z
     }
@@ -121,6 +125,26 @@ impl<T> Index<u32> for Vector3<T> {
             0 => &self.x,
             1 => &self.y,
             _ => &self.z,
+        }
+    }
+}
+
+impl<T> From<Point3<T>> for Vector3<T> {
+    fn from(n: Point3<T>) -> Self {
+        Vector3::<T> {
+            x: n.x,
+            y: n.y,
+            z: n.z,
+        }
+    }
+}
+
+impl<T> From<Normal3<T>> for Vector3<T> {
+    fn from(n: Normal3<T>) -> Self {
+        Vector3::<T> {
+            x: n.x,
+            y: n.y,
+            z: n.z,
         }
     }
 }

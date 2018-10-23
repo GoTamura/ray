@@ -1,0 +1,189 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/f9b184d0/
+Bounds3	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^impl Bounds3<f64> {$/;"	c
+Bounds3	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^impl Default for Bounds3<f64> {$/;"	c
+Bounds3	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^impl<'a, 'b, T: Copy> New<(&'a Point3<T>, &'b Point3<T>)> for Bounds3<T> {$/;"	c
+Bounds3	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^impl<'a, T: Copy> New<&'a Point3<T>> for Bounds3<T> {$/;"	c
+Bounds3	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^impl<T> Bounds3<T>$/;"	c
+Bounds3	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^impl<T> Index<u32> for Bounds3<T> {$/;"	c
+Bounds3	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^pub struct Bounds3<T> {$/;"	s
+Hit	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^pub trait Hit {$/;"	i
+New	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^pub trait New<T> {$/;"	i
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T: Add<Output=T> + Copy> AddAssign for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T: Add<Output=T>> Add for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T: Div<Output=T> + Copy> Div<T> for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T: Div<Output=T> + Copy> DivAssign<T> for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T: Mul<Output=T> + Copy> Mul<T> for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T: Mul<Output=T> + Copy> MulAssign<T> for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T: Sub<Output=T> + Copy> SubAssign for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T: Sub<Output=T>> Sub for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T> From<Vector3<T>> for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl<T> Index<u32> for Normal3<T> {$/;"	c
+Normal3	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^pub struct Normal3<T> {$/;"	s
+Normal3f	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^impl Normal3f {$/;"	c
+Normal3f	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^pub type Normal3f = Normal3<f64>;$/;"	t
+Output	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    type Output = Bounds3<T>;$/;"	t	implementation:Bounds3
+Output	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    type Output = Point3<T>;$/;"	t	implementation:Bounds3
+Output	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    type Output;$/;"	t	interface:New
+Output	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    type Output = Normal3<T>;$/;"	t	implementation:Normal3
+Output	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    type Output = T;$/;"	t	implementation:Normal3
+Output	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    type Output = Point3<T>;$/;"	t	implementation:Point3
+Output	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    type Output = Point3f;$/;"	t	implementation:f64
+Output	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    type Output = T;$/;"	t	implementation:Point3
+Output	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    type Output = Vector3<T>;$/;"	t	implementation:Point3
+Output	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    type Output = T;$/;"	t	implementation:Vector3
+Output	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    type Output = Vector3<T>;$/;"	t	implementation:Vector3
+Plane	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^impl Hit for Plane {$/;"	c
+Plane	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^pub struct Plane {$/;"	s
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Add<Output=T> + Copy> AddAssign for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Add<Output=T>> Add<Point3<T>> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Add<Output=T>> Add<Vector3<T>> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Div<Output=T> + Copy> Div<T> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Div<Output=T> + Copy> DivAssign<T> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Mul<Output=T> + Copy> Mul<T> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Mul<Output=T> + Copy> MulAssign<T> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Sub<Output=T> + Copy> SubAssign<Vector3<T>> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Sub<Output=T>> Sub<Point3<T>> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T: Sub<Output=T>> Sub<Vector3<T>> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl<T> Index<u32> for Point3<T> {$/;"	c
+Point3	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^pub struct Point3<T> {$/;"	s
+Point3f	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^pub type Point3f = Point3<f64>;$/;"	t
+Ray	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^pub struct Ray {$/;"	s
+ShadeRec	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^pub struct ShadeRec {$/;"	s
+Sphere	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^impl Hit for Sphere {$/;"	c
+Sphere	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^pub struct Sphere {$/;"	s
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Add<Output = T> + Copy> AddAssign for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Add<Output = T>> Add for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Div<Output = T> + Copy> Div<T> for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Div<Output = T> + Copy> DivAssign<T> for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Mul<Output = T> + Add<Output = T> + Sub<Output = T> + Copy> Mul<Vector3<T>> for Vector3</;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Mul<Output = T> + Copy> Mul<T> for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Mul<Output = T> + Copy> MulAssign<T> for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Sub<Output = T> + Copy> SubAssign for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T: Sub<Output = T>> Sub for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T> From<Normal3<T>> for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T> From<Point3<T>> for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T> Index<u32> for Vector3<T> {$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl<T> Vector3<T>$/;"	c
+Vector3	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^pub struct Vector3<T> {$/;"	s
+Vector3f	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^impl Vector3f {$/;"	c
+Vector3f	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^pub type Vector3f = Vector3<f64>;$/;"	t
+ViewPlane	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^struct ViewPlane {$/;"	s	implementation:World
+World	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^impl World {$/;"	c
+World	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^struct World {$/;"	s
+add	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn add(self, other: Normal3<T>) -> Normal3<T> {$/;"	P	implementation:Normal3
+add	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn add(self, other: Point3<T>) -> Point3<T> {$/;"	P	implementation:Point3
+add	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn add(self, other: Vector3<T>) -> Point3<T> {$/;"	P	implementation:Point3
+add	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn add(self, other: Vector3<T>) -> Vector3<T> {$/;"	P	implementation:Vector3
+add_assign	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn add_assign(&mut self, other: Normal3<T>) {$/;"	P	implementation:Normal3
+add_assign	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn add_assign(&mut self, other: Point3<T>) {$/;"	P	implementation:Point3
+add_assign	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn add_assign(&mut self, other: Vector3<T>) {$/;"	P	implementation:Vector3
+background_color	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    background_color: RGBColor,$/;"	m	struct:World
+bounding_sphere	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn bounding_sphere(&self) -> (Point3f, f64) {$/;"	P	implementation:Bounds3
+bounds	/home/mizakura/Documents/rust/ray/src/geometry/mod.rs	/^pub mod bounds;$/;"	n
+build	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    fn build() {$/;"	P	implementation:World
+center	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^    center: Point3f,$/;"	m	struct:Sphere
+corner	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn corner(&self, corner: u32) -> Point3<T> {$/;"	f
+cross	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    pub fn cross(self, other: Vector3<T>) -> Vector3<T> {$/;"	f
+d	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^    pub d: Vector3f,$/;"	m	struct:Ray
+default	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    fn default() -> Bounds3<f64> {$/;"	P	implementation:Bounds3
+diagonal	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn diagonal(&self) -> Vector3<T> {$/;"	f
+display_pixel	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    fn display_pixel(row: i32, column: i32, pixel_color: &RGBColor);$/;"	f	method:World::render_scene
+distance	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn distance(p1: &Point3f, p2: &Point3f) -> f64 {$/;"	P	implementation:Bounds3
+div	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn div(self, rhs: T) -> Normal3<T> {$/;"	P	implementation:Normal3
+div	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn div(self, rhs: T) -> Point3<T> {$/;"	P	implementation:Point3
+div	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn div(self, rhs: T) -> Vector3<T> {$/;"	P	implementation:Vector3
+div_assign	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn div_assign(&mut self, rhs: T) {$/;"	P	implementation:Normal3
+div_assign	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn div_assign(&mut self, rhs: T) {$/;"	P	implementation:Point3
+div_assign	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn div_assign(&mut self, rhs: T) {$/;"	P	implementation:Vector3
+dot	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    pub fn dot(self, other: Vector3<T>) -> T {$/;"	f
+f64	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^impl Mul<Point3f> for f64 {$/;"	c
+from	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn from(v: Vector3<T>) -> Self {$/;"	P	implementation:Normal3
+from	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn from(n: Normal3<T>) -> Self {$/;"	P	implementation:Vector3
+from	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn from(n: Point3<T>) -> Self {$/;"	P	implementation:Vector3
+gamma	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    gamma: f64,$/;"	m	struct:World::ViewPlane
+geometry	/home/mizakura/Documents/rust/ray/src/lib.rs	/^pub mod geometry;$/;"	n
+hit	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^    fn hit(&self, ray: &Ray, tmin: &mut f64, sr: &mut ShadeRec) -> bool {$/;"	P	implementation:Plane
+hit	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^    fn hit(&self, ray: &Ray, tmin: &mut f64, sr: &mut ShadeRec) -> bool {$/;"	P	implementation:Sphere
+hit	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^    fn hit(&self, ray: &Ray, tmin: &mut f64, sr: &mut ShadeRec) -> bool;$/;"	P	interface:Hit
+hit_an_object	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^    pub hit_an_object: bool,$/;"	m	struct:ShadeRec
+hres	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    hres: i32,$/;"	m	struct:World::ViewPlane
+index	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    fn index(&self, i: u32) -> &Point3<T> {$/;"	P	implementation:Bounds3
+index	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn index(&self, i: u32) -> &T {$/;"	P	implementation:Normal3
+index	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn index(&self, i: u32) -> &T {$/;"	P	implementation:Point3
+index	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn index(&self, i: u32) -> &T {$/;"	P	implementation:Vector3
+inside	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn inside(p: &Point3<T>, b: &Bounds3<T>) -> bool {$/;"	f
+inv_gamma	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    inv_gamma: f64,$/;"	m	struct:World::ViewPlane
+kepsilon	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^    kepsilon: f64,$/;"	m	struct:Plane
+kepsilon	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^    kepsilon: f64,$/;"	m	struct:Sphere
+length	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    pub fn length(self) -> f64 {$/;"	P	implementation:Normal3f
+length	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    pub fn length(self) -> f64 {$/;"	P	implementation:Vector3f
+length_squared	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    pub fn length_squared(self) -> f64 {$/;"	P	implementation:Normal3f
+length_squared	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    pub fn length_squared(self) -> f64 {$/;"	P	implementation:Vector3f
+lerp	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^pub fn lerp(t: f64, p0: &Point3f,  p1: &Point3f) -> Point3f {$/;"	f
+local_hit_point	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^    pub local_hit_point: Point3f,$/;"	m	struct:ShadeRec
+main	/home/mizakura/Documents/rust/ray/src/main.rs	/^fn main() {$/;"	f
+maximum_extent	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn maximum_extent(&self) -> i32 {$/;"	f
+mul	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn mul(self, rhs: T) -> Normal3<T> {$/;"	P	implementation:Normal3
+mul	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn mul(self, rhs: Point3f) -> Point3f {$/;"	P	implementation:f64
+mul	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn mul(self, rhs: T) -> Point3<T> {$/;"	P	implementation:Point3
+mul	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn mul(self, other: Vector3<T>) -> T {$/;"	P	implementation:Vector3
+mul	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn mul(self, rhs: T) -> Vector3<T> {$/;"	P	implementation:Vector3
+mul_assign	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn mul_assign(&mut self, rhs: T) {$/;"	P	implementation:Normal3
+mul_assign	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn mul_assign(&mut self, rhs: T) {$/;"	P	implementation:Point3
+mul_assign	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn mul_assign(&mut self, rhs: T) {$/;"	P	implementation:Vector3
+new	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    fn new(T) -> Self::Output;$/;"	P	interface:New
+new	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    fn new(p: &Point3<T>) -> Bounds3<T> {$/;"	P	implementation:Bounds3
+new	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    fn new(p: (&Point3<T>, &Point3<T>)) -> Bounds3<T> {$/;"	P	implementation:Bounds3
+new	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    fn new();$/;"	P	implementation:World
+normal	/home/mizakura/Documents/rust/ray/src/geometry/mod.rs	/^pub mod normal;$/;"	n
+normal	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^    normal: Normal3f,$/;"	m	struct:Plane
+normal	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^    pub normal: Normal3f,$/;"	m	struct:ShadeRec
+o	/home/mizakura/Documents/rust/ray/src/geometry/ray.rs	/^    pub o: Point3f,$/;"	m	struct:Ray
+object	/home/mizakura/Documents/rust/ray/src/geometry/mod.rs	/^pub mod object;$/;"	n
+offset	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn offset(&self, p: &Point3<T>) -> Vector3<T> {$/;"	f
+open_window	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    fn open_window(hres: i32, vres: i32);$/;"	f	method:World::render_scene
+p_max	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub p_max: Point3<T>,$/;"	m	struct:Bounds3
+p_min	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub p_min: Point3<T>,$/;"	m	struct:Bounds3
+point	/home/mizakura/Documents/rust/ray/src/geometry/mod.rs	/^pub mod point;$/;"	n
+point	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^    point: Point3f,$/;"	m	struct:Plane
+radius	/home/mizakura/Documents/rust/ray/src/geometry/object.rs	/^    radius: f64,$/;"	m	struct:Sphere
+ray	/home/mizakura/Documents/rust/ray/src/geometry/mod.rs	/^pub mod ray;$/;"	n
+render_scene	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    fn render_scene() {$/;"	P	implementation:World
+s	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    s: f64,$/;"	m	struct:World::ViewPlane
+sphere	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    sphere: Sphere,$/;"	m	struct:World
+sub	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn sub(self, other: Normal3<T>) -> Normal3<T> {$/;"	P	implementation:Normal3
+sub	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn sub(self, other: Point3<T>) -> Vector3<T> {$/;"	P	implementation:Point3
+sub	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn sub(self, other: Vector3<T>) -> Point3<T> {$/;"	P	implementation:Point3
+sub	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn sub(self, other: Vector3<T>) -> Vector3<T> {$/;"	P	implementation:Vector3
+sub_assign	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn sub_assign(&mut self, other: Normal3<T>) {$/;"	P	implementation:Normal3
+sub_assign	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn sub_assign(&mut self, other: Vector3<T>) {$/;"	P	implementation:Point3
+sub_assign	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn sub_assign(&mut self, other: Vector3<T>) {$/;"	P	implementation:Vector3
+surface_area	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn surface_area(&self) -> f64 {$/;"	f
+test	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^mod test {$/;"	n
+test	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^mod test {$/;"	n
+test	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^mod test {$/;"	n
+test	/home/mizakura/Documents/rust/ray/src/lib.rs	/^    fn test() {$/;"	f	module:tests
+test_add_assign	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    fn test_add_assign() {$/;"	f	module:test
+test_add_assign	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    fn test_add_assign() {$/;"	f	module:test
+test_add_assign	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    fn test_add_assign() {$/;"	f	module:test
+tests	/home/mizakura/Documents/rust/ray/src/lib.rs	/^mod tests {$/;"	n
+tracer	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    tracer: &Tracer,$/;"	m	struct:World
+vector	/home/mizakura/Documents/rust/ray/src/geometry/mod.rs	/^pub mod vector;$/;"	n
+volume	/home/mizakura/Documents/rust/ray/src/geometry/bounds.rs	/^    pub fn volume(&self) -> T {$/;"	f
+vp	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    vp: ViewPlane,$/;"	m	struct:World
+vres	/home/mizakura/Documents/rust/ray/src/geometry/world.rs	/^    vres: i32,$/;"	m	struct:World::ViewPlane
+x	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    pub x: T,$/;"	m	struct:Normal3
+x	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    pub x: T,$/;"	m	struct:Point3
+x	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    pub x: T, pub y: T,$/;"	m	struct:Vector3
+y	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    pub y: T,$/;"	m	struct:Normal3
+y	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    pub y: T,$/;"	m	struct:Point3
+y	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    pub x: T, pub y: T,$/;"	m	struct:Vector3
+z	/home/mizakura/Documents/rust/ray/src/geometry/normal.rs	/^    pub z: T,$/;"	m	struct:Normal3
+z	/home/mizakura/Documents/rust/ray/src/geometry/point.rs	/^    pub z: T,$/;"	m	struct:Point3
+z	/home/mizakura/Documents/rust/ray/src/geometry/vector.rs	/^    pub z: T,$/;"	m	struct:Vector3

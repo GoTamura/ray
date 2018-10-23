@@ -68,6 +68,13 @@ impl<T> Bounds3<T>
         o
     }
 
+    pub fn inside(p: &Point3<T>, b: &Bounds3<T>) -> bool {
+        p.x >= b.p_min.x && p.x <= b.p_max.x && p.y >= b.p_min.y &&
+            p.y <= b.p_max.y && p.z >= b.p_min.z && p.z <= b.p_max.z
+    }
+}
+
+impl Bounds3<f64> {
     pub fn bounding_sphere(&self) -> (Point3f, f64) {
         let center = (self.p_min + self.p_max) / 2.;
         let radius =  if Self::inside(&center, &self) { Self::distance(&center, &self.p_max)} 
@@ -75,15 +82,10 @@ impl<T> Bounds3<T>
         (center, radius)
     }
 
-    pub fn inside(p: &Point3<T>, b: &Bounds3<T>) -> bool {
-        p.x >= b.p_min.x && p.x <= b.p_max.x && p.y >= b.p_min.y &&
-            p.y <= b.p_max.y && p.z >= b.p_min.z && p.z <= b.p_max.z
+    pub fn distance(p1: &Point3f, p2: &Point3f) -> f64 {
+        let v = *p1 - *p2;
+        v.length()
     }
-
-    pub fn distance(p1: &Point3<T>, p2: &Point3<T>) -> f64 {
-        (*p1 - *p2).length()
-    }
-
 }
 
 impl<T> Index<u32> for Bounds3<T> {

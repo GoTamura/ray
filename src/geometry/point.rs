@@ -1,6 +1,5 @@
-use geometry::vector::Vector3;
+use geometry::vector::*;
 use std::ops::*;
-use std::convert::Into;
 
 pub type Point3f = Point3<f64>;
 
@@ -71,7 +70,7 @@ impl<T: Sub<Output=T> + Copy> SubAssign<Vector3<T>> for Point3<T> {
     }
 }
 
-impl<T: Div<Output=T> + Copy + Into<f64>> Div<T> for Point3<T> {
+impl<T: Div<Output=T> + Copy> Div<T> for Point3<T> {
     type Output = Point3<T>;
 
     fn div(self, rhs: T) -> Point3<T> {
@@ -134,16 +133,6 @@ impl<T> Index<u32> for Point3<T> {
 pub fn lerp(t: f64, p0: &Point3f,  p1: &Point3f) -> Point3f {
     (1. - t) * *p0 + t * *p1
 }
-
-impl<T: Into<f64>> Into<Point3f> for Point3<T> {
-    fn into(self) -> Point3f {
-        Point3f {
-            x: x.into(),
-            y: y.into(),
-            z: z.into(),
-        }
-    }
-} 
 
 #[cfg(test)]
 mod test {
