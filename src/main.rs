@@ -1,10 +1,7 @@
-extern crate ray;
-
-use ray::geometry::*;
-
 fn main() {
-    let w = World::new();
-    w.build();
-    w.render_scene();
-    println!("Rendering!!");
+    let a = 0.0;
+    a = 1.0;
+
+    //imgbuf.save("test.png").unwrap();
+    println!("Rendering!");
 }
