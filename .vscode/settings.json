@@ -1,0 +1,23 @@
+{
+    "rust-analyzer.diagnostics.disabled": [
+        "mismatched-arg-count"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#e5899b",
+        "activityBar.activeBorder": "#d3f3cb",
+        "activityBar.background": "#e5899b",
+        "activityBar.foreground": "#3c3836",
+        "activityBar.inactiveForeground": "#3c383699",
+        "activityBarBadge.background": "#d3f3cb",
+        "activityBarBadge.foreground": "#3c3836",
+        "editorGroup.border": "#e5899b",
+        "panel.border": "#e5899b",
+        "sideBar.border": "#e5899b",
+        "tab.activeBorder": "#e5899b",
+        "sash.hoverBorder": "#e5899b"
+    },
+    "peacock.color": "#e5899b",
+    "files.watcherExclude": {
+        "**/target": true
+    }
+}
